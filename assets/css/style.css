@@ -6,7 +6,7 @@
     --color-base: #033f47;
     --color-base2: #022a30;
     --color-brand: #e0f780;
-    --color-brand2:#deff58;
+    --color-brand2: #deff58;
     --sidbar-width: 245px;
     --font-base: "Bai Jamjuree";
 }
@@ -17,7 +17,12 @@ body {
     font-family: var(--font-base), sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-heading);
     font-weight: 700;
 }
@@ -36,15 +41,16 @@ img {
     width: 100%;
 }
 
-.text-brand{
+.text-brand {
     color: var(--color-brand);
 }
 
-.bg-base{
+.bg-base {
     background-color: var(--color-base);
 
 }
-.full-height{
+
+.full-height {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -52,18 +58,18 @@ img {
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom:2px solid rgba(255,255,255, 0.1) ;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.shawdow-effect{
+.shawdow-effect {
     transition: all 0.5;
 }
 
 .shawdow-effect:hover {
-    box-shadow:-6px 6px 0 0 var(--color-brand);
+    box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
-.iconbox{
+.iconbox {
     width: 60px;
     height: 60px;
     display: flex;
@@ -81,10 +87,11 @@ img {
     background-color: var(--color-base);
     /* height: 100%; */
 }
+
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: white;   
+    color: white;
 }
 
 .navbar .nav-link:hover {
@@ -95,22 +102,24 @@ img {
 .navbar .nav-link.active {
     color: var(--color-brand);
 }
+
 @media (min-width:992px) {
-    .navbar{
-        min-height:100vh;
+    .navbar {
+        min-height: 100vh;
         width: var(--sidbar-width);
         background: linear-gradient(rgba(223, 247, 128, 0.809), rgba(3, 63, 71, 0.9)), url(../images/pexels-eleazar-ceballos-2102077.jpg);
         background-size: cover;
         background-position: center;
     }
+
     .navbar-brand img {
         border: 8px solid var(--color-brand);
     }
 
     /*Content-Wrapper*/
-    #content-wrapper{
-    padding-left: var(--sidbar-width);
-  }
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
 }
 
 
@@ -121,13 +130,14 @@ img {
     font-weight: 700;
 }
 
-.btn-brand{
+.btn-brand {
     background-color: var(--color-brand);
-    border-color:var(--color-brand) ;
+    border-color: var(--color-brand);
     color: var(--color-base);
 }
+
 .btn-brand:hover,
-.btn-brand:focus{
+.btn-brand:focus {
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
@@ -138,7 +148,7 @@ img {
     position: relative;
 }
 
-.link-custom::after{
+.link-custom::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -149,44 +159,44 @@ img {
     transition: all 0.4s;
 }
 
-.link-custom:hover::after{
+.link-custom:hover::after {
     width: 100%;
 }
 
 
- /*CARD*/
+/*CARD*/
 
-.card-custom .card-custom-image{
+.card-custom .card-custom-image {
     overflow: hidden;
 
 }
 
-.card-custom .card-custom-image img{
+.card-custom .card-custom-image img {
     transition: all 0.4s ease;
 }
 
-.card-custom:hover .card-custom-image img{
+.card-custom:hover .card-custom-image img {
     transform: scale(1.1);
 }
 
 /* CONTACT */
-#contact .form-control{
+#contact .form-control {
     background-color: var(--color-base);
     border-color: var(--color-base);
     color: var(--color-body);
 }
 
-#contact .form-control:focus{
+#contact .form-control:focus {
     border-color: var(--color-brand);
     box-shadow: none;
 }
 
-#contact .form-control::placeholder{
+#contact .form-control::placeholder {
     color: var(--color-body);
 
 }
 
-#contact input.form-control{
+#contact input.form-control {
     height: 44px;
 }
 
@@ -195,7 +205,7 @@ img {
 
 } */
 
-.social-icons a{
+.social-icons a {
     width: 40px;
     height: 40px;
     display: inline-flex;
